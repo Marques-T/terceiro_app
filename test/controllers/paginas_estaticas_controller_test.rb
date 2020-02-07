@@ -12,8 +12,9 @@ class PaginasEstaticasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get sobre" do
-    get paginas_estaticas_inicio_url
+    get paginas_estaticas_sobre_url
     assert_response :success
   end
 
+  
 end
