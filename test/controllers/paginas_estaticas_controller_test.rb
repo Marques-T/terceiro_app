@@ -1,16 +1,20 @@
 require 'test_helper'
 
+test "should get root" do
+  get root_url
+  assert_response :success
+  end
+  
 def setup
   @titulo_base = "Terceiro App Web II"
   end
   
 
 class PaginasEstaticasControllerTest < ActionDispatch::IntegrationTest
-  test "should get inicio" do
-    get paginas_estaticas_inicio_url
+  test "should get root" do
+    get root_url
     assert_response :success
-    assert_select "inicio" , "Início | #{@titulo_base}"
-    end
+   end
     
 
   test "should get ajuda" do

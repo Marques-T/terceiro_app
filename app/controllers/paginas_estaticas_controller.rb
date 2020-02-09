@@ -8,4 +8,7 @@ class PaginasEstaticasController < ApplicationController
   def sobre
   end
 
+  def contato
+  end
+
 end

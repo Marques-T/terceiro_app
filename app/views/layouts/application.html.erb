@@ -10,6 +10,31 @@
   </head>
 
   <body>
-    <%= yield %>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<%= link_to 'terceiro app', '#', id: 'logo' %>
+<nav>
+<ul class="nav navbar-nav navbar-right">
+<li><%= link_to 'Início', '#' %></li>
+<li><%= link_to 'Ajuda', '#' %></li>
+<li><%= link_to 'Entrar', '#' %></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="container">
+<footer class="footer">
+<small>
+Terceiro App criado por Jeffesson Marques
+</small>
+<nav>
+<ul class="nav navbar-nav navbar-right">
+<li><%= link_to 'Sobre', '#' %></li>
+<li><%= link_to 'Contato', '#' %></li>
+</ul>
+</nav>
+</footer>
+</div>
+
   </body>
 </html>
